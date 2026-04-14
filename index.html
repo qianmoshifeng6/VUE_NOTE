@@ -10,8 +10,8 @@
     <div id="app">
     <p>{{ message }}</p>
     <p>{{ count }}</p>
-    <p>{{ empty_age + '岁' }}{{ age >= 18 ? '成年' : '未成年' }}</p>
-    <p>{{ firend.name }}{{ firend.desc }}</p>
+    <p>{{ ageLabel }} {{ age }}岁，{{ age >= 18 ? '成年' : '未成年' }}</p>
+    <p>{{ friend.name }}{{ friend.desc }}</p>
     </div>
     <script>
         const app = new Vue({
@@ -19,9 +19,9 @@
             data: {
                 message: 'Hello 韩少!',
                 count:'666',
-                empty_age: '虚岁',
+                ageLabel: '虚岁',
                 age: 25,
-                firend:{
+                friend:{
                     name:'韩少',
                     desc:'一个帅气的男孩'
                 }
