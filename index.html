@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习笔记</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+    <p>{{ message }}</p>
+    <p>{{ count }}</p>
+    <p>{{ empty_age + '岁' }}{{ age >= 18 ? '成年' : '未成年' }}</p>
+    <p>{{ firend.name }}{{ firend.desc }}</p>
+    </div>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello 韩少!',
+                count:'666',
+                empty_age: '虚岁',
+                age: 25,
+                firend:{
+                    name:'韩少',
+                    desc:'一个帅气的男孩'
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
